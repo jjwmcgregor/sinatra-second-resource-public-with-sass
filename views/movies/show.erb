@@ -1,0 +1,15 @@
+<small><a href="/movies">Back</a></small>
+<small><a href="/movies/<%= @movie.id %>/edit">Edit</a></small>
+<h1>Show Page for <%= @movie.title %></h1>
+<h3>Released <%= @movie.year %></h3>
+<ul class="list-group">
+  <% @movie.actors.split(',').each do |actor| %>
+    <li class="list-group-item"><%= actor %></li>
+  <% end %>
+</ul>
+<h5><a href="/directors/<%= @movie.director_id %>"><%= @movie.director %></a></h5>
+
+<form class="" action="/movies/<%= @movie.id %>" method="post">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete" style="background:none;border:none;color:red">
+</form>

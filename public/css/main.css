@@ -1,0 +1,36 @@
+.navbar {
+  background: #494c53 !important; }
+  .navbar a {
+    color: #99a834; }
+
+form {
+  width: 500px; }
+  form .form-group {
+    font-weight: 100;
+    letter-spacing: 5px; }
+    form .form-group .form-control {
+      box-shadow: none;
+      border-radius: 0;
+      border-top: 0;
+      border-right: 0;
+      border-left: 0;
+      border-bottom: 1px solid black;
+      padding: 20px 10px; }
+      form .form-group .form-control::placeholder {
+        letter-spacing: 3px; }
+
+button[type='submit'] {
+  background: #99a834;
+  width: 100%;
+  border-radius: 0;
+  border-color: none;
+  text-shadow: none;
+  color: white;
+  padding: 15px;
+  font-size: 1.5em;
+  transition: .2s; }
+  button[type='submit']:hover {
+    background: #474747;
+    color: #99a834; }
+
+/*# sourceMappingURL=main.css.map */

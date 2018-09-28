@@ -1,0 +1,9 @@
+<small><a href="/directors">Back</a></small>
+<small><a href="/directors/<%= @director.id %>/edit">Edit</a></small>
+<h1><%= @director.first_name %> <%= @director.last_name %></h1>
+<h3>Born <%= @director.dob %></h3>
+<h4><%= @director.nationality %></h4>
+<form class="" action="/directors/<%= @director.id %>" method="post">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete" style="background:none;border:none;color:red">
+</form>

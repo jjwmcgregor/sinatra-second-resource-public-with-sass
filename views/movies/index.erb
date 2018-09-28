@@ -1,0 +1,22 @@
+<h1>Index Page</h1>
+
+<table class="table">
+  <thead>
+    <th>ID</th>
+    <th>Movie</th>
+    <th>Released</th>
+    <th>Director</th>
+    <th>Actors</th>
+  </thead>
+  <tbody>
+    <% @movies.each do |movie| %>
+      <tr>
+        <td><%= movie.id %></td>
+        <td><a href="/movies/<%= movie.id %>"><%= movie.title %></a></td>
+        <td><%= movie.year %></td>
+        <td><a href="/directors/<%= movie.director_id %>"><%= movie.director %></a></td>
+        <td><%= movie.actors %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
